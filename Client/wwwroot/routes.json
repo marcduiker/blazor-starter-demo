@@ -1,6 +1,10 @@
 {
   "routes": [
     {
+      "route": "/fetchdata",
+      "allowedRoles": ["authenticated"]
+    },
+    {
       "route": "/*",
       "serve": "/index.html",
       "statusCode": 200

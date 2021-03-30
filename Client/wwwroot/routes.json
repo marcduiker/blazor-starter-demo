@@ -1,6 +1,14 @@
 {
   "routes": [
     {
+      "route": "/login",
+      "redirect": "/.auth/login/github"
+    },
+    {
+      "route": "/counter",
+      "allowedRoles": ["authenticated"]
+    },
+    {
       "route": "/fetchdata",
       "allowedRoles": ["authenticated"]
     },
